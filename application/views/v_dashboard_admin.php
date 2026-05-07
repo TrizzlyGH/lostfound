@@ -184,7 +184,7 @@
                 labels: ['Pending', 'Selesai'],
                 datasets: [{
                     data: [<?= $pending_verifikasi ?? 0 ?>, <?= $selesai ?? 0 ?>],
-                    backgroundColor: ['#e6ba33', '#da8630']
+                    backgroundColor: ['#e6ba33', '#837c92']
                 }]
             },
             options: {

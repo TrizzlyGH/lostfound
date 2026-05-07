@@ -9,6 +9,7 @@
     --theme-warning: #da8630;
     --theme-muted: #ce997e;
     --theme-text: #211c1d;
+	--theme-text-light: #ffffff;
 }
 
 body {
@@ -28,7 +29,7 @@ body, button, input, select, textarea {
 .card-body,
 .card-footer,
 .card-header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1.0);
 }
 
 .navbar,
@@ -147,20 +148,19 @@ body, button, input, select, textarea {
 .badge.bg-danger,
 .badge.badge-hilang,
 .badge.badge-pending {
-    background-color: var(--theme-warning) !important;
+    background-color: var(--theme-danger) !important;
 }
 
 .badge.bg-success,
 .badge.badge-ditemukan {
     background-color: var(--theme-warning) !important;
-    color: var(--theme-primary-dark) !important;
 }
 
 .badge.bg-warning,
 .badge.badge-verified,
 .badge.badge-belum-ditemukan {
     background-color: var(--theme-accent) !important;
-    color: var(--theme-primary-dark) !important;
+    color: var(--theme-text-light) !important;
 }
 
 .badge.bg-info,

@@ -5,6 +5,7 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 ## 🎯 Fitur Utama
 
 ### Admin Dashboard
+
 - ✅ **Statistik Lengkap**: Total laporan, pending verifikasi, terverifikasi, total user
 - ✅ **Manajemen Laporan**: Create, Read, Update, Delete (CRUD) lengkap
 - ✅ **Tracking Pelapor**: Catat siapa yang melapor barang
@@ -12,12 +13,14 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 - ✅ **Chart & Visualisasi**: Dashboard dengan grafik status laporan
 
 ### User Dashboard
+
 - ✅ **Lapor Barang**: Form laporan barang hilang/ditemukan
 - ✅ **Browse Barang**: Lihat semua laporan dengan filter & search
 - ✅ **Hubungi Admin**: Modal contact untuk informasi lebih lanjut
 - ✅ **Responsive Design**: Tampilan mobile-friendly
 
 ### Sistem Autentikasi
+
 - ✅ **Multi-Role**: Admin & User dengan akses berbeda
 - ✅ **Session Management**: Login/logout dengan session
 - ✅ **Password Hashing**: Keamanan password dengan bcrypt
@@ -26,6 +29,7 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 ## 📋 Struktur Database
 
 ### Tabel `users`
+
 ```sql
 - id_user (Primary Key)
 - nama
@@ -37,6 +41,7 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 ```
 
 ### Tabel `barang` (Updated)
+
 ```sql
 - id_barang (Primary Key)
 - tipe_laporan (Hilang/Ditemukan)
@@ -52,6 +57,7 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 ```
 
 ### Tabel `notifikasi`
+
 ```sql
 - id_notifikasi (Primary Key)
 - id_user (Foreign Key)
@@ -64,12 +70,15 @@ Sistem manajemen barang hilang dan ditemukan berbasis web menggunakan CodeIgnite
 ## 🚀 Cara Setup
 
 ### 1. Setup Database Otomatis
+
 Buka browser dan akses: `http://localhost/lostfound/setup_database.php`
 
 **ATAU** Import manual dengan file `database_migration.sql` di phpMyAdmin.
 
 ### 2. Konfigurasi Database (Opsional)
+
 Jika perlu mengubah konfigurasi, edit file `application/config/database.php`:
+
 ```php
 $db['default'] = array(
     'hostname' => 'localhost',
@@ -81,20 +90,23 @@ $db['default'] = array(
 ```
 
 ### 3. Akses Sistem
+
 - **URL**: `http://localhost/lostfound/`
-- **Admin Login**: admin@lostfound.com / admin123
-- **User Login**: user@lostfound.com / user123
+- **Admin Login**: <admin@lostfound.com> / admin123
+- **User Login**: <user@lostfound.com> / user123
 
 ## 📱 Cara Penggunaan
 
-### Untuk Admin:
+### Untuk Admin
+
 1. Login dengan akun admin
 2. Kelola laporan di Dashboard Admin
 3. Verifikasi laporan masuk
 4. Kirim notifikasi ke pelapor
 5. Update status barang
 
-### Untuk User:
+### Untuk User
+
 1. Register akun baru atau login
 2. Lapor barang hilang/ditemukan
 3. Browse daftar barang lainnya
@@ -110,7 +122,6 @@ $db['default'] = array(
 
 ## 📂 Struktur File
 
-```
 lostfound/
 ├── application/
 │   ├── controllers/
@@ -134,25 +145,25 @@ lostfound/
 │   └── uploads/              # Folder upload gambar
 ├── database_migration.sql    # Script database
 └── system/                   # CodeIgniter core
-```
 
 ## 🔧 Development Notes
 
 ### Password Hashing
+
 Password menggunakan `password_hash()` dengan algoritma bcrypt. Password demo sudah di-hash.
 
 ### File Upload
+
 - Format: GIF, JPG, PNG, JPEG
 - Max size: 2MB
 - Path: `assets/uploads/`
 
 ### Session Configuration
+
 Session menggunakan database untuk persistence. Konfigurasi di `config.php`.
 
 ## 📞 Support
 
 Untuk pertanyaan atau masalah, silakan buat issue di repository atau hubungi developer.
 
----
-
-**Happy Coding! 🎉**
+## Selamat Coding! 🎉

@@ -21,10 +21,10 @@
             transform: translateY(-3px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        .badge-hilang { background-color: #cc482d !important; color: #211c1d !important; }
-        .badge-ditemukan { background-color: #da8630 !important; color: #211c1d !important; }
-        .badge-belum-ditemukan { background-color: #e6ba33 !important; color: #211c1d !important; }
-        .badge-belum-diambil { background-color: #ebda34 !important; color: #211c1d !important; }
+        .badge-hilang { background-color: #cc482d !important; color: var(--theme-text-light) !important; }
+        .badge-ditemukan { background-color: #da8630 !important; color: var(--theme-text-light) !important; }
+        .badge-belum-ditemukan { background-color: #e6ba33 !important; color: var(--theme-text-light) !important; }
+        .badge-belum-diambil { background-color: #e6ba33 !important; color: var(--theme-text-light) !important; }
         .badge-selesai { background-color: #643d98 !important; }
         .card-footer { background-color: #ffffff !important; }
     </style>
