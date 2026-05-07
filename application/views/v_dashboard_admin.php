@@ -3,6 +3,7 @@
 <head>
     <title>Dashboard Admin - Sistem Lost & Found</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/theme.css') ?>" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .stat-card {
@@ -11,9 +12,10 @@
         .stat-card:hover {
             transform: translateY(-5px);
         }
-        .badge-pending { background-color: #ffc107; }
-        .badge-verified { background-color: #28a745; }
-        .badge-resolved { background-color: #6c757d; }
+        .badge bg-danger { background-color: #cc482d !important; color: #211c1d !important; }
+        .badge-pending { background-color: #e6ba33 !important; color: #211c1d !important; }
+        .badge-verified { background-color: #da8630 !important; color: #211c1d !important; }
+        .badge-resolved { background-color: #643d98 !important; color: #ffffff !important; }
     </style>
 </head>
 <body>
@@ -34,7 +36,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-4"><i class="fas fa-tachometer-alt"></i> Dashboard Admin</h2>
+                <h2 class="mb-4 dashboard-title"><i class="fas fa-tachometer-alt"></i> Dashboard Admin</h2>
             </div>
         </div>
 
@@ -182,7 +184,7 @@
                 labels: ['Pending', 'Selesai'],
                 datasets: [{
                     data: [<?= $pending_verifikasi ?? 0 ?>, <?= $selesai ?? 0 ?>],
-                    backgroundColor: ['#ffc107', '#28a745']
+                    backgroundColor: ['#e6ba33', '#da8630']
                 }]
             },
             options: {

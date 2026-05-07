@@ -3,11 +3,14 @@
 <head>
     <title>Dashboard User - Sistem Lost & Found</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/theme.css') ?>" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .search-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgba(255, 255, 255, 0.2);
             color: white;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
         }
         .item-card {
             transition: transform 0.2s;
@@ -18,11 +21,12 @@
             transform: translateY(-3px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        .badge-hilang { background-color: #dc3545; }
-        .badge-ditemukan { background-color: #28a745; }
-        .badge-belum-ditemukan { background-color: #ffc107; color: #000; }
-        .badge-belum-diambil { background-color: #fd7e14; }
-        .badge-selesai { background-color: #6c757d; }
+        .badge-hilang { background-color: #cc482d !important; color: #211c1d !important; }
+        .badge-ditemukan { background-color: #da8630 !important; color: #211c1d !important; }
+        .badge-belum-ditemukan { background-color: #e6ba33 !important; color: #211c1d !important; }
+        .badge-belum-diambil { background-color: #ebda34 !important; color: #211c1d !important; }
+        .badge-selesai { background-color: #643d98 !important; }
+        .card-footer { background-color: #ffffff !important; }
     </style>
 </head>
 <body>

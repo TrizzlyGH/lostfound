@@ -3,10 +3,11 @@
 <head>
     <title>Register - Sistem Lost & Found</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/theme.css') ?>" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #643d98 0%, #837c92 35%, #211c1d 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -18,17 +19,17 @@
             overflow: hidden;
         }
         .register-header {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            background: linear-gradient(135deg, #e6ba33 0%, #da8630 100%);
             color: white;
             padding: 2rem;
             text-align: center;
         }
         .form-control:focus {
-            border-color: #ff9a9e;
-            box-shadow: 0 0 0 0.2rem rgba(255, 154, 158, 0.25);
+            border-color: #e6ba33;
+            box-shadow: 0 0 0 0.2rem rgba(230, 186, 51, 0.25);
         }
         .btn-register {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            background: linear-gradient(135deg, #e6ba33 0%, #da8630 100%);
             border: none;
             border-radius: 25px;
             padding: 12px 30px;
@@ -36,15 +37,15 @@
         }
         .btn-register:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4);
+            box-shadow: 0 5px 15px rgba(100, 61, 152, 0.4);
         }
         .password-strength {
             font-size: 0.875rem;
             margin-top: 0.25rem;
         }
-        .strength-weak { color: #dc3545; }
-        .strength-medium { color: #ffc107; }
-        .strength-strong { color: #28a745; }
+        .strength-weak { color: #cc482d; }
+        .strength-medium { color: #ebda34; }
+        .strength-strong { color: #211c1d; }
     </style>
 </head>
 <body>
